@@ -135,8 +135,8 @@ def init_db():
             ]
             for report in sample_reports:
                 cursor.execute('''
-                    INSERT INTO reports (pet_name, animal_type, breed, color, location, date_missing, owner_contact, reward, description)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                   INSERT INTO reports (pet_name, animal_type, breed, color, location, date_missing, owner_contact, reward, description, image_filename)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', report)
             
             # Sample sightings
